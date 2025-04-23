@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .filter-black {
+    filter: brightness(0) saturate(100%);
+  }
+  
+  .filter-white {
+    filter: brightness(0) saturate(100%) invert(1);
+  }
+  
+  .invert {
+    filter: invert(1);
+  }
+}

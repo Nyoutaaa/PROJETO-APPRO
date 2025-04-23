@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Figtree', sans-serif; /* Atualiza a fonte padrão */
+  background-color: #f8f9fa; /* Cor de fundo base similar */
+  color: #333; /* Cor de texto base */
+} 

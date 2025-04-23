@@ -1,0 +1,23 @@
+[build]
+builder = "nixpacks"
+buildCommand = "npm install && npm run build"
+startCommand = "npm run preview -- --host 0.0.0.0 --port $PORT"
+
+[deploy]
+healthcheckPath = "/"
+healthcheckTimeout = 500
+restartPolicyType = "on_failure"
+restartPolicyMaxRetries = 10
+port = 3000
+
+[env]
+VITE_SUPABASE_URL = "https://xtdozoxsbvbitspkuaek.supabase.co"
+VITE_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Inh0ZG96b3hzYnZiaXRzcGt1YWVrIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUzOTAzMjYsImV4cCI6MjA2MDk2NjMyNn0.lGpdOSVVmrMSwJUI"
+VITE_APP_BASE_PATH = "/distribuidor"
+
+[project]
+name = "Pesquisa Distribuidor - Configuração de Rotas"
+
+[domain]
+name = "seudominio.com"
+path = "/distribuidor" 
